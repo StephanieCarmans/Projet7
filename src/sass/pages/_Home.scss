@@ -1,0 +1,31 @@
+.home {
+      margin: 5%;
+      width: 100%;
+
+      &__products {
+            display: flex;
+            flex-flow: wrap;
+            background: #f7f7f7;
+            border-radius: 25px;
+            width: 90%;
+            height: auto;
+            //background: peachpuff;
+            justify-content: center;
+            padding: 3%;
+            column-gap: 50px;
+            row-gap: 40px;
+
+            @media screen and (max-width: 767px) {
+                  column-gap: 0px;
+                  row-gap: 20px;
+                  flex-flow: column;
+                  padding: 5%;
+            }
+            @media only screen and (max-width: 991px) and (min-width: 768px) {
+                  column-gap: 0px;
+                  row-gap: 30px;
+                  flex-flow: column;
+                  padding: 5%;
+            }
+      }
+}

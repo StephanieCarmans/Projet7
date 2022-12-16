@@ -1,0 +1,29 @@
+.footer {
+      background-color: $footer-bkg-color;
+      width: auto;
+      height: 209px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      &__logo {
+            width: 122px;
+            height: 39.44px;
+            margin-top: 66px;
+            margin-bottom: 28.56px;
+      }
+      &__text {
+            color: $secondary-font;
+            height: 46px;
+            width: 513px;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 34px;
+            letter-spacing: 0em;
+            text-align: center;
+            @media only screen and (max-width: 767px) {
+                  font-size: 12px;
+    
+  } 
+      }
+}
