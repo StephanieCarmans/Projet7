@@ -1,0 +1,47 @@
+.slider {
+      @include card(
+            $height: 415px,
+            $width: 90%,
+            $margin: 5%,
+            $border-radius: 25px
+      );
+      display: flex;
+      /*&__active {
+    transform: scale(1);
+    transition: transform 300ms;
+      }
+      &__inactive {
+    transform: scale(1.25);
+    transition: transform 300ms;
+      }*/
+      &__image {
+            @include cardimg($width: 100%);
+            //top: 10%;
+            position: absolute;
+            height: 415px;
+      }
+      &__previous {
+            position: absolute;
+            z-index: 1;
+            top: 40%;
+            left: 1%;
+            padding: 1%;
+      }
+      &__next {
+            position: absolute;
+            z-index: 1;
+            top: 40%;
+            right: 1%;
+            padding: 1%;
+      }
+      &__count {
+            position: absolute;
+            z-index: 1;
+            font-size: 18px;
+            color: $secondary-color;
+            top: 90%;
+            left: 50%;
+            width: 24px;
+            height: 32px;
+      }
+}

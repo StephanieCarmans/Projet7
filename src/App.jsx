@@ -17,13 +17,14 @@ function App() {
            
                         <BrowserRouter>
                               <Header />
-                             
+                            
                               <Routes>
                                     <Route exact path="/" element={<Home />} />
                                     <Route path="about" element={<About />} />
-                                    <Route path="products/:productId" element={<Product />} />
+                                    <Route path="products/:id" element={<Product />} />
                                     <Route path="*" element={<Notfound />} />
                               </Routes>
+
                               
                               <Footer />
                         </BrowserRouter>

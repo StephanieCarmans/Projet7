@@ -4,17 +4,12 @@ import abouts from '../data/about.json';
 import Banner from '../components/Banner';
 import Collapse from '../components/Collapse';
 
-
 import image from '../assets/kalen-emsley.png';
-
 
 const About = () => {
       return (
-            <div className='home'>
-                  <Banner
-                        image={image}
-                        title=""
-                  />
+            <div className="home">
+                  <Banner image={image} title="" />
                   <section>
                         {abouts.map((about) => {
                               return (
@@ -25,8 +20,7 @@ const About = () => {
                                           />
                                     </article>
                               );
-                              })}
-                             
+                        })}
                   </section>
             </div>
       );
