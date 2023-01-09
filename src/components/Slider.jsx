@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 
+//import component dot
+import Dot from '../components/Dot';
+
 //import des chevrons gauche et droite
 import ArrowLeft from '../assets/Chevron-left.svg';
 import ArrowRight from '../assets/Chevron-right.svg';
@@ -17,9 +20,7 @@ const Slider = ({ slides }) => {
       const goToPrevious = () => {
             setCurrentIndex(currentIndex === 0 ? length - 1 : currentIndex - 1);
       };
-      const goToSlide = (slideIndex) => {
-            setCurrentIndex(slideIndex);
-      };
+
 
       return (
             <section className="slider">
@@ -57,23 +58,20 @@ const Slider = ({ slides }) => {
                                           alt=""
                                     />
                               </div>
-                              {/* pagination des images */}
+                              {/* pagination des images  si 1/x */}
                               {/*  <div className="slider__count">
                                     {currentIndex + 1}/{length}
                               </div>*/}
-                              {/* dot */}
+
+                              {/*pagination avec des dots */}
                               <div className="slider__dot">
-                                    {slides.map((slide, slideIndex) => (
-                                          <div
-                                                className="slider__dot--style"
-                                                key={slideIndex}
-                                                onClick={() =>
-                                                      goToSlide(slideIndex)
-                                                }
-                                          >
-                                                ●
-                                          </div>
-                                    ))}
+                                    <Dot
+                                          activeIndex={currentIndex}
+                                          sliderImage={slides}
+                                          onclick={(activeIndex) =>
+                                                setCurrentIndex(activeIndex)
+                                          }
+                                    />
                               </div>
                         </>
                   ) : null}
@@ -82,5 +80,3 @@ const Slider = ({ slides }) => {
 };
 
 export default Slider;
-
-/*${currentIndex + 1}/${data.length}*/
