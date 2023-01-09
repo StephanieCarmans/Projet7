@@ -10,7 +10,7 @@
 }
 
 /*mixin cardtitle*/
-@mixin cardtitle($font-size, $margin, $color){
+@mixin cardtitle($font-size, $margin, $color) {
       position: absolute;
       display: flex;
       align-items: center;
@@ -20,71 +20,42 @@
 }
 
 /*mixin cardimg*/
-@mixin cardimg ($width){
-  width: $width;
-  height: inherit;
-  filter: brightness(70%);
-  object-fit: cover;
-  overflow: hidden;
-  border-radius: inherit;
-
+@mixin cardimg($width) {
+      width: $width;
+      height: inherit;
+      filter: brightness(70%);
+      object-fit: cover;
+      overflow: hidden;
+      border-radius: inherit;
 }
 
 /*mixin collapse*/
-@mixin btn ($width, $height, $font-size, $padding, $margin) {
-    width: $width;
-    height: $height;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background: $primary-color;
-    border-radius: 20px;
-    //filter: drop-shadow(3px 4px 2px $shadow-color);  
-    font-size: $font-size;
-    padding:$padding;
-    margin: $margin;
-    position: relative;
-  }
-
-
-  /*mixin icones fontawesome*/
-@mixin icons ($font-weight, $content, $font-size){
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    font-family: "Font Awesome 5 Free"; font-weight: $font-weight; content: $content;
-    position: absolute;  
-    font-size: $font-size;
-  }
-
-  
-/*mixin ... */
-@mixin ellipsis {
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      margin: 0;
+@mixin btn($width, $height, $padding, $margin, $border-radius) {
+      width: $width;
+      height: $height;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background: $primary-color;
+      border-radius: $border-radius;
+      //filter: drop-shadow(3px 4px 2px $shadow-color);
+      padding: $padding;
+      margin: $margin;
+      position: relative;
+      
 }
 
-/*mixin solid heart */
-@mixin solid_heart {
-      color: inherit;
-      background-clip: text;
-      -webkit-background-clip: text;
-      opacity: 1;
-      transform: scale(1);
-      transition: all 400ms ease-in-out;
+/*mixin arrow*/
+@mixin arrow {
+      position: absolute;
+      z-index: 1;
+      top: 38%;
+      padding: 1%;
+      cursor: pointer;
 }
 
-/*mixin gradient heart */
-@mixin gradient_heart {
-      color: transparent;
-      background: linear-gradient(175deg, $secondary-color, $primary-color);
-      background-clip: text;
-      -webkit-background-clip: text;
-      opacity: 0;
-      transform: scale(1);
-      transition: all 2500ms ease-in-out;
+/*mixin arrowimg*/
+@mixin arrowimg ($width, $height) {
+      width: $width;
+      height: $height;
 }

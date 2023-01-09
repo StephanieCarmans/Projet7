@@ -2,9 +2,9 @@ import React from 'react';
 
 const Tags = ({tags}) => {
       return (
-            <div className="">
+            <div className="tagbtn">
              
-                  <p className="">{tags}</p>
+                  <div className="">{tags}</div>
             </div>
       );
 };

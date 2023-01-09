@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
 //import des chevrons gauche et droite
-import { ReactComponent as ArrowLeft } from '../assets/Chevron-left.svg';
-import { ReactComponent as ArrowRight } from '../assets/Chevron-right.svg';
+import ArrowLeft from '../assets/Chevron-left.svg';
+import ArrowRight from '../assets/Chevron-right.svg';
 
 const Slider = ({ slides }) => {
       //permet de determiner position de images pour le carousel
@@ -16,6 +16,9 @@ const Slider = ({ slides }) => {
       //vers précédent
       const goToPrevious = () => {
             setCurrentIndex(currentIndex === 0 ? length - 1 : currentIndex - 1);
+      };
+      const goToSlide = (slideIndex) => {
+            setCurrentIndex(slideIndex);
       };
 
       return (
@@ -41,18 +44,39 @@ const Slider = ({ slides }) => {
                                     className="slider__previous"
                                     onClick={goToPrevious}
                               >
-                                    <ArrowLeft />
+                                    <img
+                                          className="slider__previous--arrow"
+                                          src={ArrowLeft}
+                                          alt=""
+                                    />
                               </div>
                               <div className="slider__next" onClick={goToNext}>
-                                    <ArrowRight />
+                                    <img
+                                          className="slider__next--arrow"
+                                          src={ArrowRight}
+                                          alt=""
+                                    />
                               </div>
                               {/* pagination des images */}
-                  <div className="slider__count">
-                        {currentIndex + 1}/{length}{' '}
-                  </div>
+                              {/*  <div className="slider__count">
+                                    {currentIndex + 1}/{length}
+                              </div>*/}
+                              {/* dot */}
+                              <div className="slider__dot">
+                                    {slides.map((slide, slideIndex) => (
+                                          <div
+                                                className="slider__dot--style"
+                                                key={slideIndex}
+                                                onClick={() =>
+                                                      goToSlide(slideIndex)
+                                                }
+                                          >
+                                                ●
+                                          </div>
+                                    ))}
+                              </div>
                         </>
                   ) : null}
-                  
             </section>
       );
 };

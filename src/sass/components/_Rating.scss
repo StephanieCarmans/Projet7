@@ -1,0 +1,28 @@
+.rating {
+      display: flex;
+      text-align: center;
+      justify-content: flex-start;
+      width: 160px;
+      margin-top: 1%;
+
+      @media screen and (max-width: 767px) {
+            flex-wrap: wrap;
+            align-content: center;
+            width: 50%;
+      }
+      @media only screen and (max-width: 991px) and (min-width: 768px) {
+            flex-wrap: wrap;
+            align-content: center;
+            width: 50%;
+      }
+      &__star {
+            @media screen and (max-width: 767px) {
+                  width: 15px;
+                  height: 15px;
+                  text-align: center;
+
+            }
+            @media only screen and (max-width: 991px) and (min-width: 768px) {
+            }
+      }
+}

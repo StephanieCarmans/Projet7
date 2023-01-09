@@ -1,0 +1,51 @@
+.host {
+      display: flex;
+      text-align: center;
+      justify-content: flex-end;
+      width: 160px;
+
+      @media screen and (max-width: 767px) {
+            flex-wrap: wrap;
+            align-content: center;
+            width: 50%;
+      }
+      @media only screen and (max-width: 991px) and (min-width: 768px) {
+            flex-wrap: wrap;
+            align-content: center;
+            width: 50%;
+      }
+
+      &__name {
+            font-size: 18px;
+            color: $primary-color;
+            width: 90px;
+            height: 52px;
+            text-align: right;
+            margin: 10% 5% 0 0;
+            @media screen and (max-width: 767px) {
+                  font-size: 12px;
+                  height: 33px;
+                  width: 60px;
+                  margin: 5% 0 5% 0;
+            }
+            @media only screen and (max-width: 991px) and (min-width: 768px) {
+                  font-size: 15px;
+                  margin: 5% 0 0 0;
+                  width: 75px;
+            }
+      }
+      &__image {
+            width: 67px;
+            height: 67px;
+            border-radius: 50px;
+            margin: 4% 0 0 4%;
+            @media screen and (max-width: 767px) {
+                  width: 32px;
+                  height: 32px;
+            }
+            @media only screen and (max-width: 991px) and (min-width: 768px) {
+                  width: 48px;
+                  height: 48px;
+            }
+      }
+}

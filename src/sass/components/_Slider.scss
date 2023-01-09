@@ -2,37 +2,65 @@
       @include card(
             $height: 415px,
             $width: 90%,
-            $margin: 5%,
+            $margin: 2% 5%,
             $border-radius: 25px
       );
       display: flex;
-      /*&__active {
-    transform: scale(1);
-    transition: transform 300ms;
+      @media screen and (max-width: 767px) {
+            height: 255px;
       }
-      &__inactive {
-    transform: scale(1.25);
-    transition: transform 300ms;
-      }*/
+      @media only screen and (max-width: 991px) and (min-width: 768px) {
+            height: 340px;
+      }
+
       &__image {
             @include cardimg($width: 100%);
-            //top: 10%;
             position: absolute;
             height: 415px;
+            @media screen and (max-width: 767px) {
+                  height: 255px;
+            }
+            @media only screen and (max-width: 991px) and (min-width: 768px) {
+                  height: 340px;
+            }
       }
       &__previous {
-            position: absolute;
-            z-index: 1;
-            top: 40%;
+            @include arrow;
             left: 1%;
-            padding: 1%;
+            @media screen and (max-width: 767px) {
+                  top: 45%;
+            }
+            @media only screen and (max-width: 991px) and (min-width: 768px) {
+                  top: 40%;
+            }
+            &--arrow {
+                  @include arrowimg($height: 80px, $width: 48px);
+                  @media screen and (max-width: 767px) {
+                        @include arrowimg($height: 20px, $width: 12px);
+                  }
+                  @media only screen and (max-width: 991px) and (min-width: 768px) {
+                        @include arrowimg($height: 50px, $width: 30px);
+                  }
+            }
       }
       &__next {
-            position: absolute;
-            z-index: 1;
-            top: 40%;
+            @include arrow;
             right: 1%;
-            padding: 1%;
+            @media screen and (max-width: 767px) {
+                  top: 45%;
+            }
+            @media only screen and (max-width: 991px) and (min-width: 768px) {
+                  top: 40%;
+            }
+            &--arrow {
+                  @include arrowimg($height: 80px, $width: 48px);
+                  @media screen and (max-width: 767px) {
+                        @include arrowimg($height: 20px, $width: 12px);
+                  }
+                  @media only screen and (max-width: 991px) and (min-width: 768px) {
+                        @include arrowimg($height: 50px, $width: 30px);
+                  }
+            }
       }
       &__count {
             position: absolute;
@@ -40,8 +68,39 @@
             font-size: 18px;
             color: $secondary-color;
             top: 90%;
-            left: 50%;
+            left: 49%;
             width: 24px;
             height: 32px;
+            @media screen and (max-width: 767px) {
+                  font-size: 12px;
+                  width: 16px;
+                  height: 21px;
+                  left: 48%;
+            }
+            @media only screen and (max-width: 991px) and (min-width: 768px) {
+                  font-size: 16px;
+                  width: 20px;
+            }
+      }
+      &__dot {
+            position: absolute;
+            z-index: 1;
+            color: $secondary-color;
+            top: 90%;
+            left: 49%;
+            width: 24px;
+            height: 32px;
+            display: flex;
+            justify-content: center;
+            &--style {
+                  font-size: 18px;
+                  cursor: pointer;
+                  @media screen and (max-width: 767px) {
+                        font-size: 15px;
+                  }
+                  @media only screen and (max-width: 991px) and (min-width: 768px) {
+                        font-size: 12px;
+                  }
+            }
       }
 }

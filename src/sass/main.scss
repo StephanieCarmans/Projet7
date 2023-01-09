@@ -1,20 +1,18 @@
-@import "base/general.scss";
+@import 'base/general.scss';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-@import "utils/variables.scss";
-@import "utils/mixins.scss";
-@import "components/Thumb.scss";
-@import "components/Banner";
-@import "components/Slider";
-@import "components/Collapse";
-@import "layout/Header.scss";
-@import "layout/Footer.scss";
+@import 'utils/variables.scss';
+@import 'utils/mixins.scss';
+@import 'components/Thumb.scss';
+@import 'components/Banner.scss';
+@import 'components/Slider.scss';
+@import 'components/Collapse.scss';
+@import 'components/Tag.scss';
+@import 'components/Host.scss';
+@import 'components/Rating.scss';
+@import 'layout/Header.scss';
+@import 'layout/Footer.scss';
 
-
-@import "pages/Home.scss";
-@import "pages/Notfound.scss";
-@import "pages/Product.scss";
-
-
-
-
+@import 'pages/Home.scss';
+@import 'pages/Notfound.scss';
+@import 'pages/Product.scss';

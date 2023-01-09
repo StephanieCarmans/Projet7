@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { ReactComponent as Arrow } from '../assets/chevron.svg';
 
-
 const Collapse = ({ title, content }) => {
       const [isOpen, setIsOpen] = useState(false);
       return (
