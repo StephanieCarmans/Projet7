@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { Navigate, useParams } from 'react-router-dom';
 
 import Slider from '../components/Slider';
 import Collapse from '../components/Collapse';
@@ -14,7 +14,8 @@ const Product = () => {
       const product = products.find((product) => product.id === params.id);
       console.log({ product });
 
-      return (
+      return !product ? 
+      (<Navigate to = "/NotFound"/>) : (
             <div className="product">
                   <section>
                         <Slider slides={product.pictures} />
