@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Tags = ({tags}) => {
+//gestion des éléments constituants les Tags
+const Tags = ({ tags }) => {
       return (
             <div className="tagbtn">
-             
                   <div className="">{tags}</div>
             </div>
       );

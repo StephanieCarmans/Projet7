@@ -1,13 +1,17 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
 
+//import lien redirection vers les logements
 import { Link } from 'react-router-dom';
 
+//import image banner
 import image from '../assets/homeBanner.png';
 
+//import composants de la page Home
 import Banner from '../components/Banner';
 import Thumb from '../components/Thumb';
 
+//import json infos des logements
 import products from '../data/data.json';
 
 const Home = () => {
@@ -40,22 +44,3 @@ const Home = () => {
       );
 };
 export default Home;
-
-/*
-{data.map((post, index) => (<Card key={index} post={post} />))}
-                            */
-
-/*{
-      products.map((product) => {
-            return (
-                  <article key={product.id}>
-                        <Link to={`/products/${product.id}`}>
-                              <Thumbnails
-                                    image={product.cover}
-                                    title={product.title}
-                              />
-                        </Link>
-                  </article>
-            );
-      });
-}*/

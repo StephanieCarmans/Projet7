@@ -1,4 +1,6 @@
 import React from 'react';
+
+//import pour les liens de navigations du menu
 import { NavLink } from 'react-router-dom';
 
 //importation du logo

@@ -26,7 +26,6 @@
       &__collapsible {
             display: flex;
             flex-flow: row;
-            //align-items: flex-start;
             @media screen and (max-width: 767px) {
                   flex-flow: column;
                   align-items: center;
@@ -44,15 +43,12 @@
       @media screen and (max-width: 767px) {
             width: 100%;
       }
-
       &__title {
             font-size: 30px;
             color: $primary-color;
             margin: 0%;
             @media screen and (max-width: 767px) {
                   font-size: 20px;
-            }
-            @media only screen and (max-width: 991px) and (min-width: 768px) {
             }
       }
       &__sub {
@@ -62,22 +58,11 @@
             @media screen and (max-width: 767px) {
                   font-size: 14px;
             }
-            @media only screen and (max-width: 991px) and (min-width: 768px) {
-            }
       }
       &__tag {
             display: flex;
             flex-flow: wrap;
             width: 100%;
-            @media screen and (max-width: 767px) {
-                  //width: 100%;
-                  // flex-flow: wrap;
-            }
-
-            @media only screen and (max-width: 991px) and (min-width: 768px) {
-                  // width: 100%;
-                  // flex-flow: wrap;
-            }
       }
 }
 
@@ -100,10 +85,3 @@
             justify-content: flex-end;
       }
 }
-
-/*@media screen and (max-width: 767px) {
-            
-      }
-      @media only screen and (max-width: 991px) and (min-width: 768px) {
-            
-      }*/

@@ -35,6 +35,9 @@
             }
             &--arrow {
                   @include arrowimg($height: 80px, $width: 48px);
+                  &:hover {
+            transform: scale(1.05);
+                  }
                   @media screen and (max-width: 767px) {
                         @include arrowimg($height: 20px, $width: 12px);
                   }
@@ -54,6 +57,9 @@
             }
             &--arrow {
                   @include arrowimg($height: 80px, $width: 48px);
+                  &:hover {
+            transform: scale(1.05);
+      }
                   @media screen and (max-width: 767px) {
                         @include arrowimg($height: 20px, $width: 12px);
                   }

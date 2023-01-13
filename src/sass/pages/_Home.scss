@@ -5,11 +5,10 @@
       &__products {
             display: flex;
             flex-flow: wrap;
-            background: #f7f7f7;
+            background: $secondary-bkg-color;
             border-radius: 25px;
             width: 90%;
             height: auto;
-            //background: peachpuff;
             justify-content: center;
             padding: 3%;
             column-gap: 50px;

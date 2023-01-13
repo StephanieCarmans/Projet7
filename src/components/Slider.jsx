@@ -12,6 +12,7 @@ const Slider = ({ slides }) => {
       const [currentIndex, setCurrentIndex] = useState(0);
       //calcul grandeur du tableau picture
       const length = slides.length;
+      //suivant et précédent avec un slider infini
       //vers suivant
       const goToNext = () => {
             setCurrentIndex(currentIndex === length - 1 ? 0 : currentIndex + 1);
@@ -21,8 +22,8 @@ const Slider = ({ slides }) => {
             setCurrentIndex(currentIndex === 0 ? length - 1 : currentIndex - 1);
       };
 
-
       return (
+            //appel des images du slider selon l'id du logement
             <section className="slider">
                   {slides.map((picture, id) => {
                         return (
@@ -38,7 +39,7 @@ const Slider = ({ slides }) => {
                         );
                   })}
 
-                  {/* mise en place du défilement */}
+                  {/* mise en place du défilement  avec effacement des arrows et numération (dots ou pagination) si une seule image*/}
                   {length > 1 ? (
                         <>
                               <div
@@ -58,6 +59,7 @@ const Slider = ({ slides }) => {
                                           alt=""
                                     />
                               </div>
+
                               {/* pagination des images  si 1/x */}
                               {/*  <div className="slider__count">
                                     {currentIndex + 1}/{length}

@@ -1,4 +1,4 @@
-/*mixin card*/ /*UTLISEE*/
+/*mixin card*/
 @mixin card($height, $width, $margin, $border-radius) {
       border-radius: $border-radius;
       position: relative;
@@ -9,7 +9,7 @@
       animation: fadeInUp 600ms ease-in-out;
 }
 
-/*mixin cardtitle*/
+/*mixin card title*/
 @mixin cardtitle($font-size, $margin, $color) {
       position: absolute;
       display: flex;
@@ -19,7 +19,7 @@
       color: $color;
 }
 
-/*mixin cardimg*/
+/*mixin card image*/
 @mixin cardimg($width) {
       width: $width;
       height: inherit;
@@ -38,11 +38,9 @@
       align-items: center;
       background: $primary-color;
       border-radius: $border-radius;
-      //filter: drop-shadow(3px 4px 2px $shadow-color);
       padding: $padding;
       margin: $margin;
       position: relative;
-      
 }
 
 /*mixin arrow*/
@@ -54,8 +52,8 @@
       cursor: pointer;
 }
 
-/*mixin arrowimg*/
-@mixin arrowimg ($width, $height) {
+/*mixin arrow image*/
+@mixin arrowimg($width, $height) {
       width: $width;
       height: $height;
 }

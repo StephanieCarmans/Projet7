@@ -1,5 +1,6 @@
 import React from 'react';
 
+//mise en place des éléments de la Bannière
 const Banner = ({ image, title }) => {
       return (
             <div className="banner">

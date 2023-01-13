@@ -5,14 +5,7 @@
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      color: $primary-font;
-       /*@media screen and (max-width: 767px) {
-                  margin: 10% 0 10% 0 ;
-            }
-            @media only screen and (max-width: 991px) and (min-width: 768px) {
-            
-            margin: 15% 0 15% 0
-      }*/
+      color: $primary-color;
       &__title {
             font-size: 488px;
             margin: 0;
@@ -20,9 +13,8 @@
                   font-size: 96px;
             }
             @media only screen and (max-width: 991px) and (min-width: 768px) {
-            
-             font-size: 200px;
-      }
+                  font-size: 200px;
+            }
       }
       &__text {
             font-size: 36px;
@@ -31,12 +23,10 @@
                   font-size: 18px;
                   text-align: center;
                   width: 260px;
-                 //height: 52px;
             }
             @media only screen and (max-width: 991px) and (min-width: 768px) {
-            
-             font-size: 24px;
-      }
+                  font-size: 24px;
+            }
       }
       &__link {
             font-size: 18px;

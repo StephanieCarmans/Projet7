@@ -10,7 +10,7 @@
             rgba(255, 255, 255, 0) 0%,
             rgba(0, 0, 0, 0.5) 100%
       );
-      background-color: #ff6060;
+      background-color: $primary-color;
       @media screen and (max-width: 767px) {
             height: 255px;
             width: 100%;
@@ -34,7 +34,7 @@
             @include cardtitle(
                   $font-size: 18px,
                   $margin: 15px 20px,
-                  $color: $secondary-font
+                  $color: $secondary-color
             );
             bottom: 0%;
       }
