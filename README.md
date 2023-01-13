@@ -1,16 +1,16 @@
 
 # Kasa - Créez une application web de location immobilière avec React
 Kasa est dans le métier de la location d’appartements entre particuliers depuis près de 10 ans maintenant. Avec plus de 500 annonces postées chaque jour, Kasa fait partie des leaders de la location d’appartements entre particuliers en France.
-------------------
+-------
 
 ## Le contexte
 Le site de Kasa a été codé il y a maintenant plus de 10 ans en ASP.NET avec un code legacy important. Laura, la CTO, a donc lancé une refonte totale pour passer à une stack complète en JavaScript avec NodeJS côté back-end, et React côté front-end. Kasa en a également profité pour commander de nouvelles maquettes auprès de son designer habituel, qui est en freelance. Un gros chantier pour cette année !
 
 ## Les outils
-Create React App
-React Router Dom
-Sass
-Pas de librairie React externe
+* Create React App
+* React Router Dom
+* Sass
+* Pas de librairie React externe
 
 ## Les contraintes techniques
 ### React
