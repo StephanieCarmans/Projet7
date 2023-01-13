@@ -1,4 +1,6 @@
 
+[Logo Kasa](https://github.com/StephanieCarmans/Projet7/blob/main/src/assets/.LOGO-1.png)
+
 # Kasa - Créez une application web de location immobilière avec React
 Kasa est dans le métier de la location d’appartements entre particuliers depuis près de 10 ans maintenant. Avec plus de 500 annonces postées chaque jour, Kasa fait partie des leaders de la location d’appartements entre particuliers en France.
 -------
