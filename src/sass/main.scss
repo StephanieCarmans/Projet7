@@ -3,6 +3,8 @@
 
 @import 'utils/variables.scss';
 @import 'utils/mixins.scss';
+@import 'utils/keyframe.scss';
+
 @import 'components/Thumb.scss';
 @import 'components/Banner.scss';
 @import 'components/Slider.scss';
@@ -11,6 +13,7 @@
 @import 'components/Host.scss';
 @import 'components/Rating.scss';
 @import 'components/Dot.scss';
+
 @import 'layout/Header.scss';
 @import 'layout/Footer.scss';
 

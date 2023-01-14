@@ -1,7 +1,7 @@
 import React from 'react';
 
 //importation du logo
-import Logo from '../assets/.LOGO-2.png';
+import Logo from '../assets/LOGO-2.svg';
 
 function Footer() {
       return (

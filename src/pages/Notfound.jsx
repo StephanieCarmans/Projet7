@@ -1,6 +1,6 @@
 import React from 'react';
 
-//import lien redirection vers la page accueuil Home
+//import lien redirection vers la page accueil Home
 import { Link } from 'react-router-dom';
 
 const Notfound = () => {

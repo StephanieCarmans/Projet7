@@ -4,7 +4,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 //importation du logo
-import Logo from '../assets/.LOGO-1.png';
+import Logo from '../assets/LOGO-1.svg';
 
 function Header() {
       return (
