@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 
 //import pour les liens de navigations du menu
-import { NavLink } from 'react-router-dom';
+import { NavLink } from "react-router-dom";
 
 //importation du logo
-import Logo from '../assets/LOGO-1.svg';
+import Logo from "../assets/LOGO-1.svg";
 
 function Header() {
       return (

@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 //import image arrow up and down
-import { ReactComponent as Arrow } from '../assets/chevron.svg';
+import { ReactComponent as Arrow } from "../assets/chevron.svg";
 
 const Collapse = ({ title, content }) => {
       //Mise en place d'un composant collapse fermé qui ne s'ouvre qu'au click de l'utilisateur

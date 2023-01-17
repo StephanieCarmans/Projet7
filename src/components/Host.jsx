@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 //mise en place des éléments concernant le loueur
 const Host = ({ image, name }) => {

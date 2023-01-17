@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 //gestion des éléments constituants les Tags
 const Tags = ({ tags }) => {

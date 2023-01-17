@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
 //importation du logo
-import Logo from '../assets/LOGO-2.svg';
+import Logo from "../assets/LOGO-2.svg";
 
 function Footer() {
       return (

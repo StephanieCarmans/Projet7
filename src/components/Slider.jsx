@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 //import component dot
-import Dot from '../components/Dot';
+import Dot from "../components/Dot";
 
 //import des chevrons gauche et droite
-import ArrowLeft from '../assets/Chevron-left.svg';
-import ArrowRight from '../assets/Chevron-right.svg';
+import ArrowLeft from "../assets/Chevron-left.svg";
+import ArrowRight from "../assets/Chevron-right.svg";
 
 const Slider = ({ slides }) => {
       //permet de determiner position de images pour le carousel

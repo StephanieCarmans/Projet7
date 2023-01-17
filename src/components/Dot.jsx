@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 //Mise en place des élements du Dot avec couleur changeante en fonction de l'activation de l'image
 const Dot = ({ activeIndex, onclick, sliderImage }) => {
@@ -9,8 +9,8 @@ const Dot = ({ activeIndex, onclick, sliderImage }) => {
                               key={index}
                               className={`${
                                     activeIndex === index
-                                          ? 'dot active-dot'
-                                          : 'dot'
+                                          ? "dot active-dot"
+                                          : "dot"
                               }`}
                               onClick={() => onclick(index)}
                         >

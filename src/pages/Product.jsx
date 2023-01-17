@@ -1,17 +1,17 @@
-import React from 'react';
+import React from "react";
 
 //import pour la gestion d'erreur d'id et la sélection d'un id particulier
-import { Navigate, useParams } from 'react-router-dom';
+import { Navigate, useParams } from "react-router-dom";
 
 //import composants de la page Product
-import Slider from '../components/Slider';
-import Collapse from '../components/Collapse';
-import Tags from '../components/Tags';
-import Host from '../components/Host';
-import Rating from '../components/Rating';
+import Slider from "../components/Slider";
+import Collapse from "../components/Collapse";
+import Tags from "../components/Tags";
+import Host from "../components/Host";
+import Rating from "../components/Rating";
 
 //import json infos des logements
-import products from '../data/data.json';
+import products from "../data/data.json";
 
 const Product = () => {
       //selection d'un id particulier pour rediriger vers les bonnes infos de manière dynamique

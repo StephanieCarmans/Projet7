@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 //gestion des éléments constituants les vignettes
 const Thumb = ({ image, title }) => {
