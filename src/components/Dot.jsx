@@ -4,15 +4,15 @@ import React from "react";
 const Dot = ({ activeIndex, onclick, sliderImage }) => {
       return (
             <div className="all-dots">
-                  {sliderImage.map((slide, index) => (
+                  {sliderImage.map((slide, id) => (
                         <span
-                              key={index}
+                              key={id}
                               className={`${
-                                    activeIndex === index
+                                    activeIndex === id
                                           ? "dot active-dot"
                                           : "dot"
                               }`}
-                              onClick={() => onclick(index)}
+                              onClick={() => onclick(id)}
                         >
                               ●
                         </span>

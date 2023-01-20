@@ -14,18 +14,18 @@ const Collapse = ({ title, content }) => {
                   >
                         <h2 className="collapse__btn--title">{title}</h2>
                         {isOpen ? (
-                              //fermeture de l'éléments collapse
+                              //effet de l'arrow sur ouverture de l'éléments collapse avec son contenu
                               <div className="collapse__btn--svg rotate">
                                     <Arrow />
                               </div>
                         ) : (
-                              //ouverture de l'éléments collapse avec son contenu
+                              // effet de l'arrow sur fermeture de l'éléments collapse
                               <div className="collapse__btn--svg rotate-down">
                                     <Arrow />
                               </div>
                         )}
                   </div>
-
+                  {/* element se génère que si la condition isOpen est respectée*/}
                   {isOpen && <div className="collapse__text">{content}</div>}
             </div>
       );
